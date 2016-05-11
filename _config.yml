@@ -14,14 +14,12 @@ markdown: kramdown
 
 
 ### content configuration ###
-title:       "Safe Web for kids - Sandbox browser for schools, kiosks and family protection"
-keywords:    "safe, web, for, kids, control, content, restricted, filter, porn, nofap, blocker, child, limited, adult, access, best, app, mums, ios, whitelist"
-description: "Safe Web is a web browser for iPhone and iPad devices. Don't worry about what your children browse as they will only see what you let them see. Safe Web is a whitelist based Internet browser that only allows to navigate to some predefined websites or domains of your choose. Apart from that, Safe Web creates a sandbox environment where the user can't leave the bookmarked websites domains."
+title:       "bobgoo apps"
+keywords:    "angel, subirana, fernandez, bobgoo, apps, ios, iphone, ipad, safe, web"
+description: "Indie development for iphone and ipad devices"
 favicon:     "img/favicon.ico"
 touch_icon:  "img/apple-touch-icon.png"
-google_analytics_key: UA-25289053-5 ## put YOUR key here to enable tracking! (blank to disable)
-appstore_link: "https://itunes.apple.com/app/safe-web-for-kids/id460723131?ct=web&mt=8"
-
+google_analytics_key: UA-25289053-4 ## put YOUR key here to enable tracking! (blank to disable)
 
 ### template colors, used site-wide via css ###
 colors:

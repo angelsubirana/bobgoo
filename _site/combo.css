@@ -534,58 +534,10 @@ html { box-sizing: border-box; }
   
   
   
-  nav .p-safari { border-color: #f8f8f8; }
-  #safari { background-color: #f8f8f8 !important; color: #111111; }
-  #safari a { color: #111111; }
-  #safari .sectiondivider { color: #f8f8f8; }
-
-  
-  
-  
-  nav .p-add { border-color: #8E2223; }
-  #add { background-color: #8E2223 !important; color: #f8f8f8; }
-  #add a { color: #f8f8f8; }
-  #add .sectiondivider { color: #8E2223; }
-
-  
-  
-  
-  nav .p-htindex { border-color: #f8f8f8; }
-  #htindex { background-color: #f8f8f8 !important; color: #111111; }
-  #htindex a { color: #111111; }
-  #htindex .sectiondivider { color: #f8f8f8; }
-
-  
-  
-  
-  nav .p-reviews { border-color: #8E2223; }
-  #reviews { background-color: #8E2223 !important; color: #f8f8f8; }
-  #reviews a { color: #f8f8f8; }
-  #reviews .sectiondivider { color: #8E2223; }
-
-  
-  
-  
-  nav .p-shots { border-color: #111111; }
-  #shots { background-color: #111111 !important; color: #f8f8f8; }
-  #shots a { color: #f8f8f8; }
-  #shots .sectiondivider { color: #111111; }
-
-  
-  
-  
-  nav .p-features { border-color: #A08452; }
-  #features { background-color: #A08452 !important; color: #01192F; }
-  #features a { color: #01192F; }
-  #features .sectiondivider { color: #A08452; }
-
-  
-  
-  
-  nav .p-why { border-color: #8E2223; }
-  #why { background-color: #8E2223 !important; color: #f8f8f8; }
-  #why a { color: #f8f8f8; }
-  #why .sectiondivider { color: #8E2223; }
+  nav .p-portfolio { border-color: #f8f8f8; }
+  #portfolio { background-color: #f8f8f8 !important; color: #01192F; }
+  #portfolio a { color: #01192F; }
+  #portfolio .sectiondivider { color: #f8f8f8; }
 
   
   
