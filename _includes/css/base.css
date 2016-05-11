@@ -52,7 +52,7 @@
 ================================================== */
 	body {
 		background: #fff;
-		font-family: "HelveticaNeue", Arial, sans-serif;
+		font-family: "HelveticaNeue", "Helvetica Neue", Arial, sans-serif;
 		color: #444;
 		-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
 		-webkit-text-size-adjust: 100%;
