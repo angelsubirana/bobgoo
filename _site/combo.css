@@ -534,10 +534,10 @@ html { box-sizing: border-box; }
   
   
   
-  nav .p-portfolio { border-color: #f8f8f8; }
-  #portfolio { background-color: #f8f8f8 !important; color: #01192F; }
-  #portfolio a { color: #01192F; }
-  #portfolio .sectiondivider { color: #f8f8f8; }
+  nav .p-safe { border-color: #01192F; }
+  #safe { background-color: #01192F !important; color: #f8f8f8; }
+  #safe a { color: #f8f8f8; }
+  #safe .sectiondivider { color: #01192F; }
 
   
   
