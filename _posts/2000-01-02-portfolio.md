@@ -1,5 +1,5 @@
 ---
-title: "safe saga"
+title: "portfolio"
 bg: gtnavy
 color: white
 fa-icon: spinner
@@ -7,9 +7,9 @@ style: center
 
 ---
 
-# The Safe saga
+# The Safe collection
 
-## These are apps designed for family protection
+## These are apps designed for both home and work protection
 
 &nbsp;
 
