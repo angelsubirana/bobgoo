@@ -7,7 +7,7 @@ style: center
 
 ---
 
-# The Safe collection
+# Safe collection
 
 ## These are apps designed for both home and work protection
 
