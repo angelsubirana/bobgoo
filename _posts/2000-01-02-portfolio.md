@@ -16,6 +16,12 @@ style: center
 <div class="container">
 <div class="row">
   <div class="column full">
+	<a href="http://safewebpro.bobgoo.com"><img width="180" src="img/Icon-Safe-Web-for-work-512.png" alt="" title="" /></a><br>
+	<h4>Safe Web for work</h4>
+  </div>
+</div>  
+<div class="row">
+  <div class="column full">
 	<a href="http://safeweb.bobgoo.com"><img width="180" src="img/Icon-Safe-Web-for-kids-512.png" alt="" title="" /></a><br>
 	<h4>Safe Web for kids</h4>
   </div>
