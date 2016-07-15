@@ -34,6 +34,8 @@ colors:
   gtgold:    '#E0A01F'
   gtnavy:    '#01192F'
   gtmetallic: '#A08452'
+  faceblue:  '#3B5998'
+  mainblue:  '#338FFC'
 
 kramdown:
   auto_ids:  false
