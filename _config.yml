@@ -21,6 +21,9 @@ favicon:     "img/favicon.ico"
 touch_icon:  "img/apple-touch-icon.png"
 google_analytics_key: UA-25289053-4 ## put YOUR key here to enable tracking! (blank to disable)
 
+url: https://www.bobgoo.com
+enforce_ssl: www.bobgoo.com
+
 ### template colors, used site-wide via css ###
 colors:
   red:       '#8E2223'      
