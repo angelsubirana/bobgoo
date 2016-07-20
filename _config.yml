@@ -16,7 +16,7 @@ markdown: kramdown
 ### content configuration ###
 title:       "bobgoo apps"
 keywords:    "angel, subirana, fernandez, bobgoo, apps, ios, iphone, ipad, safe, web, angry, friends, facebook, kids, work, spot"
-description: "Indie development for iPhone and iPad devices"
+description: "Indie design and development for iPhone and iPad devices"
 favicon:     "img/favicon.ico"
 touch_icon:  "img/apple-touch-icon.png"
 google_analytics_key: UA-25289053-4 ## put YOUR key here to enable tracking! (blank to disable)
