@@ -1,9 +1,7 @@
 
+All Rights Reserved. © 2016 [Angel Subirana](http://www.bobgoo.com)
 
-Handcrafted in Barcelona by [Angel Subirana](http://www.bobgoo.com)
-Copyright &copy; 2016 Angel Subirana
-
-<a href="https://twitter.com/bobgooapps"><span class="fa-stack fa-lg">
+<a href="https://twitter.com/bobgoolabs"><span class="fa-stack fa-lg">
 <i class="fa fa-circle fa-stack-2x"></i>
 <i class="fa fa-twitter fa-stack-1x" style="color: black;"></i>
 </span></a>

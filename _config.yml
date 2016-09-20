@@ -14,9 +14,9 @@ markdown: kramdown
 
 
 ### content configuration ###
-title:       "bobgoo apps"
-keywords:    "angel, subirana, fernandez, bobgoo, apps, ios, iphone, ipad, safe, web, angry, friends, facebook, kids, work, spot"
-description: "Indie design and development for iPhone and iPad devices"
+title:       "Bobgoo Labs by Angel Subirana"
+keywords:    "angel, subirana, fernandez, bobgoo, apps, ios, iphone, ipad, safe, web, still, friends, facebook, kids, spot, indie, development, design, free, apps"
+description: "Design and Development for iOS devices"
 favicon:     "img/favicon.ico"
 touch_icon:  "img/apple-touch-icon.png"
 google_analytics_key: UA-25289053-4 ## put YOUR key here to enable tracking! (blank to disable)
@@ -25,7 +25,7 @@ url: https://www.bobgoo.com
 enforce_ssl: www.bobgoo.com
 
 twitter:
-    username: "@bobgooApps"
+    username: "@BobgooLabs"
     
 defaults:
   -
