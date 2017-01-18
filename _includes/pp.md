@@ -3,7 +3,7 @@ www.bobgoo.com Privacy Policy</div>
 <span style="font-family: inherit;"></span><br />
 <div>
 <span style="font-family: inherit;">This privacy policy has been compiled to better serve those who are concerned with how their 'Personally identifiable information' (PII) is being used online. PII, as used in US privacy law and information security, is information that can be used on its own or with other information to identify, contact, or locate a single person, or to identify an individual in context. Please read our privacy policy carefully to get a clear understanding of how we collect, use, protect or otherwise handle your Personally Identifiable Information in accordance with our website.</span></div>
-<div id="ppBody" style="margin: 0px auto; width: 1530px;">
+<div id="ppBody" style="margin: 0px auto;">
 <span id="infoCo" style="font-size: 11pt;"></span><br />
 <div class="grayText" style="font-size: 11pt;">
 <strong>What personal information do we collect from the people that visit our blog, website or app?</strong></div>
