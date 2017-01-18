@@ -1,4 +1,4 @@
-<div id="ppHeader" style="font-family: verdana; font-size: 21pt; margin: 0px auto; width: 1530px;">
+<div id="ppHeader" style="font-family: verdana; font-size: 21pt; margin: 0px auto;">
 www.bobgoo.com Privacy Policy</div>
 <span style="font-family: inherit;"></span><br />
 <div>
