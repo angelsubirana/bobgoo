@@ -54,6 +54,7 @@ colors:
   gtmetallic: '#A08452'
   faceblue:  '#3B5998'
   mainblue:  '#338FFC'
+  amazonblue: '#146EB4'
 
 kramdown:
   auto_ids:  false
