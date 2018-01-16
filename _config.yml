@@ -1,63 +1,37 @@
----
-
 port: 4000
 host: 0.0.0.0
 safe: false
 
-
-### site serving configuration ###
-exclude: [CNAME, README.md, .gitignore]
-permalink: /:title ## disables post output
-timezone: null
-lsi: false
-markdown: kramdown
-
-
-### content configuration ###
-title:       "Bobgoo Labs by Angel Subirana"
-keywords:    "angel, subirana, fernandez, bobgoo, apps, ios, iphone, ipad, safe, web, still, friends, facebook, kids, spot, indie, development, design, free, apps"
-description: "Design and Development for iOS devices"
-favicon:     "img/favicon.ico"
-touch_icon:  "img/apple-touch-icon.png"
-google_analytics_key: UA-25289053-4 ## put YOUR key here to enable tracking! (blank to disable)
+# Site settings
+title: Angel Subirana - World class development for iOS devices
+description: The answer to life, the universe and everything, or not. It is just a portfolio with some of the best iOS apps of the month, the year and all times. Enjoy!
+keywords: angel, subirana, fernandez, bobgoo, apps, ios, iphone, ipad, safe, web, still, friends, facebook, kids, spot, indie, development, design, free, apps
+# baseurl: "/particle" # the subpath of your site, e.g. /blog
+# url: "localhost:3000" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
 
 url: https://www.bobgoo.com
 enforce_ssl: www.bobgoo.com
 
-twitter:
-    username: "@BobgooLabs"
-    
-defaults:
-  -
-    scope:
-        path: ""
-    values:
-        image:
-            #path: /img/Icon-Rounded-256.png
-            twitter: /img/FBBanner.png
-            facebook: /img/FBBanner.png
-            height: 630
-            width: 1200
 
-### template colors, used site-wide via css ###
-colors:
-  red:       '#8E2223'      
-  black:     '#111111'
-  white:     '#f8f8f8'
-  blue:      '#49a7e9'
-  green:     '#9bcf2f'
-  purple:    '#c869bf'
-  orange:    '#fab125'
-  turquoise: '#0fbfcf'
-  gtgold:    '#E0A01F'
-  gtnavy:    '#01192F'
-  gtmetallic: '#A08452'
-  faceblue:  '#3B5998'
-  mainblue:  '#338FFC'
-  amazonblue: '#146EB4'
+# User settings
+username: Angel Subirana
+user_title: iOS Developer
+email: support@bobgoo.com
+twitter_username: bobgoolabs
 
-kramdown:
-  auto_ids:  false
+# Google-analytics
+google_analytics_key: UA-25289053-4
 
-gems:
-  - jekyll-seo-tag
+# Opengraph
+opengraph:
+    title: 
+    description:
+    image: /assets/img/FBBanner.png
+    height: 630
+    width: 1200
+
+# Favicons
+favicon:     /assets/favicon/favicon.ico
+touch_icon:  /assets/faviconapple-touch-icon.png
+
+exclude: ['package.json', 'src' , 'node_modules']
