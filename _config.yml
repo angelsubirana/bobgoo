@@ -3,7 +3,7 @@ host: 0.0.0.0
 safe: false
 
 # Site settings
-title: Angel Subirana - World class development for iOS devices
+title: Angel Subirana - App Publisher
 description: The answer to life, the universe and everything, or not. It is just a portfolio with some of the best iOS apps of the month, the year and all times. Enjoy!
 keywords: angel, subirana, fernandez, bobgoo, apps, ios, iphone, ipad, safe, web, still, friends, facebook, kids, spot, indie, development, design, free, apps
 # baseurl: "/particle" # the subpath of your site, e.g. /blog
@@ -15,7 +15,7 @@ enforce_ssl: www.bobgoo.com
 
 # User settings
 username: Angel Subirana
-user_title: iOS Developer
+user_title: App Publisher
 email: support@bobgoo.com
 twitter_username: bobgoolabs
 
