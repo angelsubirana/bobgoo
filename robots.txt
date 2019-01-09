@@ -1,5 +1,5 @@
 User-Agent: *
-Disallow: 
 Disallow: /privacy*
+Noindex: /privacy*
 
 Sitemap: https://www.bobgoo.com/sitemap.xml
