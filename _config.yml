@@ -3,9 +3,8 @@ host: 0.0.0.0
 safe: false
 
 # Site settings
-title: Angel Subirana - App Publisher
-description: The answer to life, the universe and everything, or not. It is just a portfolio with some of the best iOS apps of the month, the year and all times. Enjoy!
-keywords: angel, subirana, fernandez, bobgoo, apps, ios, iphone, ipad, safe, web, still, friends, facebook, kids, spot, indie, development, design, free, apps
+title: Bobgoo - Apps done with &#x2764;&#xFE0F; in Barcelona
+description: We think, design, develop and publish successful apps. Since 2011 turning business ideas into reality. 
 # baseurl: "/particle" # the subpath of your site, e.g. /blog
 # url: "localhost:3000" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
 
@@ -14,9 +13,8 @@ enforce_ssl: www.bobgoo.com
 
 
 # User settings
-username: Angel Subirana
-user_title: App Publisher
-email: support@bobgoo.com
+username: Bobgoo, S.L.
+email_username: hi@bobgoo.com
 twitter_username: bobgoolabs
 
 # Google-analytics
