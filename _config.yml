@@ -15,7 +15,7 @@ enforce_ssl: www.bobgoo.com
 # User settings
 username: Bobgoo
 email_username: hi@bobgoo.com
-twitter_username: bobgoolabs
+twitter_username: BobgooHQ
 
 # Google-analytics
 google_analytics_key: UA-25289053-4
