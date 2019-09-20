@@ -16,16 +16,24 @@
     max-width: 100%;
     height: auto;
     border-radius: 10px;
+    display: block;
   }
   h5 {
     margin: 0;
   }
-  li {
-    color: $main;
-    font-size: 1.1rem;
-  }
   p {
     margin-right: 5px;
+  }
+  li {
+    margin-right: 5px
+  }
+  ul {
+    list-style-type: square;
+    padding:0 0 0 40px;
+    margin-right: 5px
+  }
+  a { 
+    color: blue;
   }
 }
 
@@ -67,12 +75,18 @@
 }
 
 .box { 
-  background: #f6f6f6; 
+  background: #e9e9e9;
   margin: 0 0 25px; 
   overflow: hidden; 
   padding: 20px; 
-  border-radius: 35px 35px 0px 0px;
-  -moz-border-radius: 35px 35px 0px 0px;
-  -webkit-border-radius: 35px 35px 0px 0px;
-  border: 2px solid #5878ca;
+  border-radius: 20px;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  transition: all 0.4s;
+  box-shadow: 0px 0px 120px -25px rgba(0,0,0, 0.5);
+  &:hover{
+    transform: scale(1.02);
+    box-shadow: 0px 0px 80px -25px rgba(0,0,0, 0.5);
+    transition: all 0.4s;
+  }
 }
