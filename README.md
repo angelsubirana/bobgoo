@@ -24,8 +24,8 @@ Repositori: https://github.com/angelsubirana/bobgoo. Branca de publicació: `gh-
 3. Aquesta carpeta està vinculada al repositori existent i conserva l’historial anterior a la migració.
 4. Per publicar actualitzacions, crear el commit i fer push a `gh-pages` només amb autorització explícita de l’usuari.
 5. A **Settings → Pages → Build and deployment → Source**, seleccionar **GitHub Actions** i executar el workflow si cal.
-6. Mantenir el domini personalitzat **www.bobgoo.com** i comprovar HTTPS. `public/CNAME` i `astro.config.mjs` ja utilitzen aquest domini.
-7. Comprovar que `https://bobgoo.com` redirigeixi directament a `https://www.bobgoo.com/`, sense passar per HTTP. La configuració de DNS/Cloudflare i Pages es revisa a part del codi.
+6. Mantenir el domini personalitzat **bobgoo.com** i comprovar HTTPS. `public/CNAME` i `astro.config.mjs` ja utilitzen aquest domini.
+7. Comprovar que `https://www.bobgoo.com` redirigeixi directament a `https://bobgoo.com/`, sense passar per HTTP. La configuració de DNS/Cloudflare i Pages es revisa a part del codi.
 
 Si es decideix publicar des de `main`, canviar abans la branca a `.github/workflows/deploy.yml`.
 
