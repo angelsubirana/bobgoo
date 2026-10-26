@@ -1,0 +1,75 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const projects = [
+  {
+    name: 'Still Friends',
+    domain: 'stillfriends.com',
+    description: 'Keep track of your Facebook friends. See who’s been added, who’s gone, and what’s changed over time.',
+    category: 'Facebook friend tracking',
+  },
+  {
+    name: 'Still Followers',
+    domain: 'stillfollowers.com',
+    description: 'Understand your TikTok audience. Track followers, unfollowers, and mutual connections, with a history of what’s changed.',
+    category: 'TikTok follower analytics',
+  },
+];
+---
+
+<Layout title="Our projects — Bobgoo" description="Explore Still Friends and Still Followers, two active projects by Bobgoo for tracking Facebook friend changes and TikTok follower analytics.">
+  <main id="main" class="projects-page">
+    <a class="back-link" href="/">← Back to home</a>
+    <div class="projects-heading">
+      <div>
+        <p class="eyebrow">Built at Bobgoo</p>
+        <h1>Our projects<span>.</span></h1>
+      </div>
+      <p class="projects-intro">Ideas turned into useful tools.<br />Here’s what we’re working on.</p>
+    </div>
+    <ul class="project-list" aria-label="Active projects">
+      {projects.map((project, index) => (
+        <li>
+          <a class="project-link" href={`https://${project.domain}/`} aria-labelledby={`project-${index}`}>
+            <span class="project-number" aria-hidden="true">{String(index + 1).padStart(2, '0')}</span>
+            <div class="project-content">
+              <p class="project-category">{project.category}</p>
+              <h2 id={`project-${index}`}>{project.name}</h2>
+              <p class="project-description">{project.description}</p>
+              <span class="project-domain">{project.domain}</span>
+            </div>
+            <span class="project-arrow" aria-hidden="true">↗</span>
+          </a>
+        </li>
+      ))}
+    </ul>
+  </main>
+</Layout>
+
+<style>
+  .projects-page { flex: 1; padding-block: 40px 64px; }
+  .projects-page > .back-link { margin-bottom: 36px; }
+  .projects-heading { display: flex; align-items: end; justify-content: space-between; gap: 32px; margin-bottom: 44px; }
+  .projects-heading .eyebrow { color: var(--muted); margin-bottom: 18px; }
+  .projects-heading h1 { font-size: clamp(52px, 6.5vw, 88px); }
+  .projects-intro { color: var(--muted); font-size: 16px; line-height: 1.6; margin: 0 0 3px; }
+  .project-list { list-style: none; padding: 0; margin: 0; border-top: 1px solid var(--line); }
+  .project-list li { border-bottom: 1px solid var(--line); }
+  .project-link { display: grid; grid-template-columns: 64px 1fr 48px; gap: 24px; padding-block: 30px; align-items: start; }
+  .project-number { font-family: monospace; font-size: 12px; color: var(--muted); padding-top: 3px; }
+  .project-category { margin: 0 0 10px; color: var(--muted); font-size: 12px; }
+  .project-content h2 { font-size: clamp(28px, 3vw, 40px); font-weight: 500; letter-spacing: -.045em; margin: 0; }
+  .project-description { max-width: 600px; color: var(--muted); font-size: 16px; line-height: 1.6; margin: 12px 0 16px; }
+  .project-domain { color: var(--accent); font-size: 13px; }
+  .project-arrow { color: var(--accent); font-size: 36px; line-height: 1; text-align: right; transition: transform 180ms ease; }
+  .project-link:hover h2 { color: var(--accent); }
+  .project-link:hover .project-arrow { transform: translate(3px, -3px); }
+  @media (max-width: 760px) {
+    .projects-page { padding-block: 32px 48px; }
+    .projects-heading { display: block; margin-bottom: 32px; }
+    .projects-intro { margin-top: 22px; font-size: 15px; }
+    .project-link { grid-template-columns: 24px 1fr 24px; gap: 12px; padding-block: 26px; }
+    .project-description { font-size: 15px; }
+    .project-arrow { font-size: 28px; }
+  }
+</style>

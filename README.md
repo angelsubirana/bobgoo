@@ -1,72 +1,32 @@
-# Particle Jekyll Theme
+# Bobgoo
 
-This is a simple and minimalist template for Jekyll designed for developers that want to show of their portfolio.
+Web corporatiu mínim amb Astro. HTML i CSS estàtics, sense fonts externes. Inclou GA4 (`G-74BVLBQ1QH`) amb cookies d’analítica activades per defecte (`analytics_storage: granted`), sense cartell de cookies. L’emmagatzematge publicitari, Google Signals i personalització publicitària continuen desactivats.
 
-The Theme features:
+L’analítica només es carrega a `bobgoo.com` i `www.bobgoo.com`, per excloure les previsualitzacions locals. La verificació de cookies al navegador i recepció d’esdeveniments a GA4 queda pendent del desplegament i l’accés a la propietat.
 
-- Gulp
-- SASS
-- Sweet Scroll
-- Particle.js
-- BrowserSync
-- Font Awesome and Devicon icons
-- Google Analytics
-- Info Customization
+## Desenvolupament
 
-## Basic Setup
+Node 24 (`nvm use` si fas servir nvm).
 
-1. [Install Jekyll](http://jekyllrb.com)
-2. Fork the [Particle Theme](https://github.com/nrandecker/particle/fork)
-3. Clone the repo you just forked.
-4. Edit `_config.yml` to personalize your site.
-
-## Site and User Settings
-
-You have to fill some informations on `_config.yml` to customize your site.
-
-```
-# Site settings
-description: A blog about lorem ipsum dolor sit amet
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://localhost:3000" # the base hostname & protocol for your site
-
-# User settings
-username: Lorem Ipsum
-user_description: Anon Developer at Lorem Ipsum Dolor
-user_title: Anon Developer
-email: anon@anon.com
-twitter_username: lorem_ipsum
-github_username:  lorem_ipsum
-gplus_username:  lorem_ipsum
+```sh
+npm ci
+npm run dev
 ```
 
-**Don't forget to change your url before you deploy your site!**
+`npm run build` genera `dist/`. `npm run preview` permet revisar el resultat compilat.
 
-## Color and Particle Customization
-- Color Customization
-  - Edit the sass variables
-- Particle Customization
-  - Edit the json data in particle function in app.js
-  - Refer to [Particle.js](https://github.com/VincentGarreau/particles.js/) for help
+## Publicació al GitHub Pages existent
 
-## Running the blog in local
+Repositori: https://github.com/angelsubirana/bobgoo. Branca de publicació: `gh-pages`. Cada push executa `.github/workflows/deploy.yml`: instal·la dependències, compila Astro i publica `dist/` amb GitHub Actions.
 
-In order to compile the assets and run Jekyll on local you need to follow those steps:
+1. Revisar el text, l’adreça `hi@bobgoo.com` i la informació de privacitat.
+2. La pàgina `/privacy/` conserva íntegrament el text de la política antiga, amb la data d’edició actualitzada a 2026-10-26 i la presentació adaptada al disseny nou.
+3. Aquesta carpeta està vinculada al repositori existent i conserva l’historial anterior a la migració.
+4. Per publicar actualitzacions, crear el commit i fer push a `gh-pages` només amb autorització explícita de l’usuari.
+5. A **Settings → Pages → Build and deployment → Source**, seleccionar **GitHub Actions** i executar el workflow si cal.
+6. Mantenir el domini personalitzat **www.bobgoo.com** i comprovar HTTPS. `public/CNAME` i `astro.config.mjs` ja utilitzen aquest domini.
+7. Comprovar que `https://bobgoo.com` redirigeixi directament a `https://www.bobgoo.com/`, sense passar per HTTP. La configuració de DNS/Cloudflare i Pages es revisa a part del codi.
 
-- Install [NodeJS](https://nodejs.org/)
-- Run `npm install`
-- Run `gulp`
+Si es decideix publicar des de `main`, canviar abans la branca a `.github/workflows/deploy.yml`.
 
-## Questions
-
-Having any issues file a [GitHub Issue](https://github.com/nrandecker/particle/issues/new).
-
-## License
-
-This theme is free and open source software, distributed under the The MIT License. So feel free to use this Jekyll theme anyway you want.
-
-## Credits
-
-This theme was partially designed with the inspiration from these fine folks
-- [Willian Justen](https://github.com/willianjusten/will-jekyll-template)
-- [Vincent Garreau](https://github.com/VincentGarreau/particles.js/)
+La carpeta `/Users/angelsubirana/Documents/web/bobgoo` es conserva intacta com a històric. Es mantenen els fitxers de verificació de Google i `app-ads.txt` a `public/`, així com l’accés antic `/privacy.html`, que porta a `/privacy/`.

@@ -1,0 +1,31 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout>
+  <main id="main" class="home">
+    <section class="hero" aria-labelledby="headline">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="small-mark" aria-hidden="true"></span> From an idea to something that works.</p>
+        <h1 id="headline">Clear ideas.<br /><span>Useful software.</span></h1>
+        <p class="intro">We bring ideas to life through software<br class="desktop-break" /> and digital products. From Barcelona.</p>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <svg class="symbol" viewBox="0 0 400 400" fill="none">
+          <g stroke="currentColor" stroke-width="40">
+            <rect x="130" y="45" width="140" height="310" rx="70" transform="rotate(-45 200 200)" />
+            <rect x="130" y="45" width="140" height="310" rx="70" transform="rotate(45 200 200)" />
+          </g>
+        </svg>
+        <span class="art-caption">One idea. Many possibilities.</span>
+      </div>
+    </section>
+    <section class="contact" aria-labelledby="contact-title">
+      <div>
+        <p class="eyebrow" id="contact-title">It starts with a conversation.</p>
+        <a class="email" href="mailto:hi@bobgoo.com">hi@bobgoo.com <span class="email-arrow" aria-hidden="true">↗</span></a>
+      </div>
+      <p class="contact-note">Have something in mind?<br />We’d love to hear about it.</p>
+    </section>
+  </main>
+</Layout>
