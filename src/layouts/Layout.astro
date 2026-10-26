@@ -1,5 +1,6 @@
 ---
 import '../styles/global.css';
+import ArrowUpRight from '../components/ArrowUpRight.astro';
 
 interface Props {
   title?: string;
@@ -67,12 +68,12 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
       <header class="header">
         <a class="wordmark" href="/" aria-label="Bobgoo, home">bobgoo<span aria-hidden="true">.</span></a>
         <span class="header-note">Software & digital products</span>
-        <a class="header-contact" href="mailto:hi@bobgoo.com">Let’s talk <span aria-hidden="true">↗</span></a>
+        <a class="header-contact" href="mailto:hi@bobgoo.com">Let’s talk <span><ArrowUpRight /></span></a>
       </header>
       <slot />
       <footer class="footer">
         <span>© {new Date().getUTCFullYear()} Bobgoo</span>
-        <span class="footer-location">Barcelona, Catalonia <span aria-hidden="true">↗</span></span>
+        <span class="footer-location">Barcelona, Catalonia <ArrowUpRight /></span>
         <nav class="footer-links" aria-label="Footer">
           <a href="/projects/" aria-current={Astro.url.pathname === '/projects/' ? 'page' : undefined}>Projects</a>
           <a href="/privacy/" aria-current={Astro.url.pathname === '/privacy/' ? 'page' : undefined}>Privacy</a>

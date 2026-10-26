@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import ArrowUpRight from '../components/ArrowUpRight.astro';
 
 const projects = [
   {
@@ -38,7 +39,7 @@ const projects = [
               <p class="project-description">{project.description}</p>
               <span class="project-domain">{project.domain}</span>
             </div>
-            <span class="project-arrow" aria-hidden="true">↗</span>
+            <span class="project-arrow"><ArrowUpRight /></span>
           </a>
         </li>
       ))}
