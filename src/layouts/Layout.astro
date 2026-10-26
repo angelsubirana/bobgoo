@@ -6,12 +6,14 @@ interface Props {
   title?: string;
   description?: string;
   noindex?: boolean;
+  nofollow?: boolean;
 }
 
 const {
   title = 'Bobgoo — Clear ideas. Useful software.',
   description = 'Software and digital products from Barcelona. Clear ideas. Useful software.',
   noindex = false,
+  nofollow = false,
 } = Astro.props;
 const canonical = new URL(Astro.url.pathname, Astro.site);
 ---
@@ -23,7 +25,7 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content={description} />
     <meta name="theme-color" content="#f6f5f1" />
-    {noindex && <meta name="robots" content="noindex" />}
+    {(noindex || nofollow) && <meta name="robots" content={[noindex && 'noindex', nofollow && 'nofollow'].filter(Boolean).join(', ')} />}
     <link rel="canonical" href={canonical} />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta property="og:type" content="website" />
@@ -63,20 +65,20 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
     </script>
   </head>
   <body>
-    <a class="skip-link" href="#main">Skip to content</a>
+    <a class="skip-link" href="#main" rel={nofollow ? 'nofollow' : undefined}>Skip to content</a>
     <div class="page">
       <header class="header">
-        <a class="wordmark" href="/" aria-label="Bobgoo, home">bobgoo<span aria-hidden="true">.</span></a>
+        <a class="wordmark" href="/" rel={nofollow ? 'nofollow' : undefined} aria-label="Bobgoo, home">bobgoo<span aria-hidden="true">.</span></a>
         <span class="header-note">Software & digital products</span>
-        <a class="header-contact" href="mailto:hi@bobgoo.com">Let’s talk <span><ArrowUpRight /></span></a>
+        <a class="header-contact" href="mailto:hi@bobgoo.com" rel="nofollow">Let’s talk <span><ArrowUpRight /></span></a>
       </header>
       <slot />
       <footer class="footer">
         <span>© {new Date().getUTCFullYear()} Bobgoo</span>
         <span class="footer-location">Barcelona, Catalonia <ArrowUpRight /></span>
         <nav class="footer-links" aria-label="Footer">
-          <a href="/projects/" aria-current={Astro.url.pathname === '/projects/' ? 'page' : undefined}>Projects</a>
-          <a href="/privacy/" aria-current={Astro.url.pathname === '/privacy/' ? 'page' : undefined}>Privacy</a>
+          <a href="/projects/" rel={nofollow ? 'nofollow' : undefined} aria-current={Astro.url.pathname === '/projects/' ? 'page' : undefined}>Projects</a>
+          <a href="/privacy/" rel="nofollow" aria-current={Astro.url.pathname === '/privacy/' ? 'page' : undefined}>Privacy</a>
         </nav>
       </footer>
     </div>
